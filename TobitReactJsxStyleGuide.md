@@ -42,8 +42,8 @@ src
   |-UserStore.js
 |-utils
 |-alt.js
-|-Index.js
-|-Index.css
+|-index.js
+|-index.css
 ...
   
 ```
