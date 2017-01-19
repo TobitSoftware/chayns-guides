@@ -5,7 +5,6 @@ We think this are some very usefull and handsome information to work with chayns
 
 ## Tobit.Software
 * [Tobit.Software](https://de.tobit.software/aktuell)
-* [Chayns Developers](https://developers.chayns.net/start)
 * [Partner Network](https://de.tspn.tobit.software/Anmelden)
 
 ## Language Style Guides
