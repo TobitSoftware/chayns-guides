@@ -133,7 +133,7 @@ static defaultProps= {
 ```
  
 ## Component 
-* Declar your React component with `extends React.Component`.
+* Declare your React component with `extends React.Component`.
 * Keep your render function short and clean.
 * You can use stateless components to minimize your render function. Especially if you can use the stateless components multiple times.
 
