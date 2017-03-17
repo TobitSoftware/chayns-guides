@@ -1,6 +1,6 @@
 # Tobit React/JSX Style Guide
 There are some basic rules you have to consider. We think this is a very handsome way to work with React and Chayns.
-* Only one React component per per file.
+* Only one React component per file.
     * But multiple Stateless or Pure components are allowed in one file.
 * Use JSX syntax when writing React component. 
 
