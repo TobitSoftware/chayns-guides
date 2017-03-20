@@ -9,7 +9,7 @@ In addition this repository contains a list of templates to different languages 
 
 ## Templates
 * [chayns, es6](https://github.com/TobitSoftware/chayns-template-es6)
-* [chayns, es6, react](https://github.com/TobitSoftware/chayns-template-es6-react)
+* [chayns, esNext, react](https://github.com/TobitSoftware/chayns-template-esnext-react)
 * [chayns, es6, react, alt](https://github.com/TobitSoftware/chayns-template-es6-react-alt)
 * [chayns, es6, angular](https://github.com/TobitSoftware/chayns-template-es6-angular)
 
