@@ -342,6 +342,7 @@ render(){
 
 ## Chayns with React
 * By using chayns you have to be sure chayns is ready. Therefor put the `ReactDOM.render` in your `chayns.ready`.
+* Every accordeon in chayns must be a single component in react
 
 ```jsx
 chayns.ready.then(function resolved() {
