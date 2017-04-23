@@ -6,6 +6,7 @@ In addition this repository contains a list of templates to different languages 
 ## Language Style Guides
 
 * [Tobit.Software React/JSX Style Guide](https://github.com/TobitSoftware/chayns-guides/blob/master/TobitReactJsxStyleGuide.md)
+* [Tobit.Software JavaScript(ES5) Style Guide](https://github.com/TobitSoftware/chayns-guides/blob/master/TobitJavaScriptStyleGuide.md)
 
 ## Templates
 * [chayns, es6](https://github.com/TobitSoftware/chayns-template-es6)
