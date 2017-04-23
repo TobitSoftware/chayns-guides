@@ -11,7 +11,7 @@ This styleguide is a guideline for a uniform design of our JavaScript files.
 * Modules are enclosed parts of the JavaScript
 * All dependencies are provided as parameters
 * A public init()-method initializes the module
-* Name are written in camelCase
+* Names are written in camelCase
 * The module contains an export variable named by the module
 
 ### Example
@@ -138,7 +138,7 @@ null === undefined; // false
 ```
 
 ### Indents
-Every level is indented using tabs. In the IDE's any developer decide for himself how to display the tab indents.
+Every level is indented using tabs. In the IDE's any developer decides for himself how to display the tab indents.
 
 ### Braces
 No breaks before opening curled braces.
