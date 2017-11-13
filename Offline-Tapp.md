@@ -70,7 +70,7 @@ worker runs and caches all responses.
   * Then you can fetch everything (excepting iframes & `<object>`s – these will pick their own controller based on their
 resource URL)
 
-That is a nice process to cache everything. First I explain you how the process works and later on the functions in detail.
+That is a nice process to cache everything. First I explain how the process works and later on the functions in detail.
 
 
 ```js
