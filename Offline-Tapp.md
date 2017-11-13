@@ -63,7 +63,7 @@ self.addEventListener('activate', function(e) {
     });
 ```
 
-During the activation you need to check if there are old service worker and delete the cache, so that just the current service
+During the activation you need to check if there are old service workers and delete the cache, so that just the current service
 worker runs and caches all responses.
 
 
