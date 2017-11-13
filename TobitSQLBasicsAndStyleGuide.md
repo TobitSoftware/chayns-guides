@@ -2,7 +2,7 @@
 This article addresses the basics of SQL with regard to table design and data access via C #.
 
 ## Conventions
-At first here are some conventions in naming functions, parameters and endpoints in order to achieve an uniform design.
+At first here are some conventions in naming functions, parameters and endpoints in order to achieve an uniform design. hi
 
 | Description | Convention |
 |---|---|
