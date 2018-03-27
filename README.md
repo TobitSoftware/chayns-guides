@@ -18,6 +18,7 @@ In addition this repository contains a list of templates to different languages 
 
 ## Howto
 * [Tobit.Software  Service Worker Offline Tapp](https://github.com/TobitSoftware/chayns-guides/blob/master/Offline-Tapp.md)
+* [Tobit.Software  Frontend Intercom](https://github.com/TobitSoftware/chayns-guides/blob/master/Intercom.md)
 
 ## Tobit.Software
 * [Tobit.Software](https://en.tobit.software/)
