@@ -1,5 +1,5 @@
-# Tobit React/JSX Style Guide
-There are some basic rules you have to consider. We think this is a very handsome way to work with React and Chayns.
+# Tobit.Software React/JSX Style Guide
+There are some basic rules you have to consider. We think this is a very handsome way to work with React and chayns®.
 * Only one React component per file.
     * But multiple Stateless or Pure components are allowed in one file.
 * Use JSX syntax when writing React component. 
@@ -17,44 +17,51 @@ There are some basic rules you have to consider. We think this is a very handsom
 10. [Parentheses](#parentheses)
 11. [Tag](#tags)
 12. [Refs](#refs)
-13. [Chayns](#chayns-with-react)
+13. [chayns®](#chayns-with-react)
 14. [Source](#source)
 
 ## Project structure
-* This is a possible structure for an Project with `React` als `alt.js`.
+* This is a possible structure for a project with `React` and `Redux`.
 
 ```
 ..
 src
 |-actions
-  |-configAction.js
+  |-todo.js
 |-components
-  |-configs
-    |-admin
-      |-SettingsAccordion.jsx
-    |-user
-      |-FavoriteAccordion.jsx
-|-Intro.jsx
-|-Intro.scss
-|-sources
-  |-UserSource.js
-|-stores
-  |-UserStore.js
-|-utils
-|-alt.js
-|-index.js
-|-index.css
+  |-header
+    |-headline
+      |-Headline.jsx
+      |-headline.scss
+    |-intro
+      |-Intro.jsx
+      |-intro.scss
+  |-todos
+      |-Todos.jsx
+      |-todos.scss
+      |-todo
+         |-Todo.jsx
+         |-TodoContainer.js
+         |-todo.scss
+  |-addTodo
+    |-AddTodo.jsx
+    |-AddTodoContainer.js
+    |-AddTodo.scss
+|-reducers
+  |-Todo.js
+|-index.jsx
+|-index.html
 ...
   
 ```
 ## Naming 
 * **Filename**: Use PascalCase for filenames  `ChaynsUser.jsx`
-* **ReferenctNaming**: PascalCase for React components, camelCase for their instances.
+* **ReferenceNaming**: PascalCase for React components, camelCase for their instances.
 
 ```jsx
 import  ChaynsUser from './ChaynsUser';
 
-const chaynsUserItem = <ChaynsUser />;
+const chaynsUser = <ChaynsUser />;
 ```
 
 * **ComponentNaming**:  Use the filename as the component name. You can use a `index.jsx` if the directory name has the same name as the component. **Better** rename the directory. 
@@ -63,7 +70,7 @@ const chaynsUserItem = <ChaynsUser />;
 import  ChaynsUser from './ChaynsUser';
 ```
 
-* **Properties** Don't use DOM component propertie names for different purpose e.g. don't use style or className with your own definition.
+* **Properties** Avoid using DOM component prop names for different purposes e.g. don't use "style" or "className" as prop names.
 
 ```jsx
 import SchoolClass from './SchoolClass';
@@ -72,7 +79,7 @@ import SchoolClass from './SchoolClass';
 ```
 
 ## PropTypes
-* PropTypes will help you to ceep your code clean and structured.
+* PropTypes will help you to keep your code clean and structured.
 * Always define defaultProps for all non-required props.
 
 ```jsx
@@ -102,7 +109,7 @@ class User extends React.Component{
 User.propTypes = propTypes;
 User.defaultProps = defaultProps;
 
-export default  User
+export default User
 ```
 * This can be used with the plugin `transform-class-properties`
 
@@ -142,7 +149,6 @@ export default class Tapp extends React.Component {
     render(){
         return(
             <div className="tapp">
-                <!--Set your intro text-->
                 <div className="tapp__intro">
                     <h1>My Tapp</h1>
                     This is a new Tapp
@@ -167,41 +173,16 @@ const company = ({name})=> (
 ### Component structure
 
 #### extends React.Component
- 1. static methods
- 2. constructor
+ 1.  optional static methods
+ 2.  constructor
  3.  getChildContext
- 4.  componentWillMount
  5.  componentDidMount
- 6.  componentWillReceiveProps
  7.  shouldComponentUpdate
- 8.  componentWillUpdate
  9.  componentDidUpdate
- 10. omponentWillUnmount
- 11. eventHandlers like `onClickUserPicture()`, `onChangeUserName()`
+ 11. eventHandlers like `onClickUACGroup()`
  12. getter for render like `getUACGroup()`
+ 12. optional render methods like `renderUACGroup()`
  13. render
-
-#### React.createClass
- 1. displayName
- 2. propTypes
- 3. contextTypes
- 4. childContextTypes
- 5. mixins
- 6. statics
- 7. defaultProps
- 8. getDefaultProps
- 9. getInitialState
- 10. getChildContext
- 11. componentWillMount
- 12. componentDidMount
- 13. componentWillReceiveProps
- 14. shouldComponentUpdate
- 15. componentWillUpdate
- 16. componentDidUpdate
- 17. componentWillUnmount
- 18. eventHandlers like `onClickUserPicture()`, `onChangeUserName()`
- 19. getter for render like `getUACGroup()`
- 20. render
 
 ## Properties
 * Always use camelCase for your prop names.
@@ -270,7 +251,7 @@ export default class extends React.Component {
 />
 ```
 ```jsx
-//only one Property
+// only one property
 <Order id="1234567891011" />
 ```
 ```jsx
@@ -291,7 +272,7 @@ export default class extends React.Component {
 <User
    userName = "Max Mustermann"
    userId={123456789}
-   style = {{margin: '10px'}}
+   style = {{ margin: '10px' }}
 />
 ```
 
@@ -301,12 +282,12 @@ export default class extends React.Component {
 
 ```jsx
 render(){
-    return(
+    return (
         <div>
             <User
                 userName = "Max Mustermann"
                 userId={123456789}
-                style = {{margin: '10px'}}
+                style = {{ margin: '10px' }}
             />
         </div>
     )
@@ -328,7 +309,7 @@ render(){
 ```jsx
 <div 
     className = "tapp"
-    style = {{overflow : "hidden"}} 
+    style = {{ overflow : 'hidden' }} 
 />
 ```
 
@@ -340,21 +321,19 @@ render(){
 ```
 
 
-## Chayns with React
-* By using chayns you have to be sure chayns is ready. Therefor put the `ReactDOM.render` in your `chayns.ready`.
-* Every accordeon in chayns must be a single component in react
+## chayns® with React
+* By using chayns® you have to be sure chayns® is ready. Therefor put the `ReactDOM.render()` in your `chayns.ready`.
 
 ```jsx
 chayns.ready.then(function resolved() {
 
     ReactDOM.render(
-            <div className='tapp'>
+            <div className="tapp">
                 <Intro />
             </div>,
             document.querySelector('#app')
     );
-        
-    console.log('chayns is ready, environment is loaded', chayns.env);
+    
 }).catch(function rejected() {
     console.log('no chayns environment found');
 }).then(function always() {
