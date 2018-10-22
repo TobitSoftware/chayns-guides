@@ -48,7 +48,7 @@ src
     |-AddTodoContainer.js
     |-AddTodo.scss
 |-reducers
-  |-Todo.js
+  |-todo.js
 |-index.jsx
 |-index.html
 ...
