@@ -43,7 +43,7 @@ src
          |-Todo.jsx
          |-TodoContainer.js
          |-todo.scss
-  |-addTodo
+  |-add-todo
     |-AddTodo.jsx
     |-AddTodoContainer.js
     |-AddTodo.scss
