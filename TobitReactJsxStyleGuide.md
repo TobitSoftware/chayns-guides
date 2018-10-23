@@ -47,6 +47,8 @@ src
     |-AddTodo.jsx
     |-AddTodoContainer.js
     |-AddTodo.scss
+  App.jsx
+  App.scss
 |-reducers
   |-todo.js
 |-index.jsx
