@@ -15,9 +15,9 @@ In addition this repository contains a list of templates to different languages 
 * [chayns, es6, angular](https://github.com/TobitSoftware/chayns-template-es6-angular)
 
 ## Examples
-* [chayns, react - ToDo-List example](https://github.com/TobitSoftware/chayns-react-todo-example)
-* [chayns, react, redux - ToDo-List example](https://github.com/TobitSoftware/chayns-react-redux-todo-example)
-* [chayns, react, hooks - ToDo-List example](https://github.com/TobitSoftware/chayns-react-hooks-todo-example)
+* [chayns, react - ToDo-List](https://github.com/TobitSoftware/chayns-react-todo-example)
+* [chayns, react, redux - ToDo-List](https://github.com/TobitSoftware/chayns-react-redux-todo-example)
+* [chayns, react, hooks - ToDo-List](https://github.com/TobitSoftware/chayns-react-hooks-todo-example)
 
 
 ## Howto
