@@ -10,11 +10,15 @@ In addition this repository contains a list of templates to different languages 
 * [Tobit.Software SQL Basics and Styleguide](https://github.com/TobitSoftware/chayns-guides/blob/master/TobitSQLBasicsAndStyleGuide.md)
 
 
-## Templates
+## Templates & Examples
 * [chayns, es6](https://github.com/TobitSoftware/chayns-template-es6)
 * [chayns, esNext, react](https://github.com/TobitSoftware/chayns-template-esnext-react)
 * [chayns, esNext, react, alt](https://github.com/TobitSoftware/chayns-template-es6-react-alt)
 * [chayns, es6, angular](https://github.com/TobitSoftware/chayns-template-es6-angular)
+* [chayns, react - ToDo-List example](https://github.com/TobitSoftware/chayns-react-todo-example)
+* [chayns, react, redux - ToDo-List example](https://github.com/TobitSoftware/chayns-react-redux-todo-example)
+* [chayns, react, hooks - ToDo-List example](https://github.com/TobitSoftware/chayns-react-hooks-todo-example)
+
 
 ## Howto
 * [Tobit.Software  Service Worker Offline Tapp](https://github.com/TobitSoftware/chayns-guides/blob/master/Offline-Tapp.md)
