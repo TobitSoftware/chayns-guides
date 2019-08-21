@@ -85,7 +85,7 @@ import SchoolClass from './SchoolClass';
 * Always define defaultProps for all non-required props.
 
 ```jsx
-import React {PureComponent} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 
 const propTypes ={
