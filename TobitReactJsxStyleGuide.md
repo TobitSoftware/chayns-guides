@@ -85,7 +85,7 @@ import SchoolClass from './SchoolClass';
 * Always define defaultProps for all non-required props.
 
 ```jsx
-import React from 'react';
+import React {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 
 const propTypes ={
@@ -98,7 +98,7 @@ const defaultProps= {
     nameAffix: 'Hello'
 };
 
-class User extends React.Component{
+class User extends PureComponent{
 
     render(){
         return(
@@ -117,10 +117,10 @@ export default User
 * This can be used with the plugin `transform-class-properties`
 
 ```jsx
-import React from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 
-export default class User extends React.Component{
+export default class User extends PureComponent{
 
 static propTypes ={
     userId: PropTypes.number.isRequired,
@@ -144,12 +144,14 @@ static defaultProps= {
 ```
  
 ## Component 
-* Declare your React component with `extends React.Component`.
+* Declare your React component with `extends PureComponent`.
+* We use PureComponent instead of Component because it handles the shouldComponentUpdate method for us.
+* If we want to define our own shouldComponentUpdate logic we have to use Component instead of PureComponent.
 * Keep your render function short and clean.
 * You can use stateless components to minimize your render function. Especially if you can use the stateless components multiple times.
 
 ```jsx
-export default class Tapp extends React.Component {
+export default class Tapp extends PureComponent {
     render(){
         return(
             <div className="tapp">
@@ -176,12 +178,12 @@ const company = ({name})=> (
 
 ### Component structure
 
-#### extends React.Component
+#### extends PureComponent
  1.  optional static methods
  2.  constructor
  3.  getChildContext
  5.  componentDidMount
- 7.  shouldComponentUpdate
+ 7.  shouldComponentUpdate (only in Component)
  9.  componentDidUpdate
  11. eventHandlers like `onClickUACGroup()`
  12. getter for render like `getUACGroup()`
