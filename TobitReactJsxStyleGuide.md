@@ -85,7 +85,8 @@ import SchoolClass from './SchoolClass';
 * Always define defaultProps for all non-required props.
 
 ```jsx
-import React, { PropTypes } from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const propTypes ={
     userId: PropTypes.number.isRequired,
@@ -116,7 +117,8 @@ export default User
 * This can be used with the plugin `transform-class-properties`
 
 ```jsx
-import React, { PropTypes } from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class User extends React.Component{
 
