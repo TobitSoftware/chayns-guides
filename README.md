@@ -5,7 +5,7 @@ In addition this repository contains a list of templates to different languages 
 
 ## Language Style Guides
 
-* [Tobit.Software React/JSX Style Guide](https://github.com/TobitSoftware/chayns-guides/blob/master/TobitReactJsxStyleGuide.md)
+* [Tobit.Software React Project Guideline](https://github.com/TobitSoftware/react-project-guideline)
 * [Tobit.Software JavaScript(ES5) Style Guide](https://github.com/TobitSoftware/chayns-guides/blob/master/TobitJavaScriptStyleGuide.md)
 * [Tobit.Software SQL Basics and Styleguide](https://github.com/TobitSoftware/chayns-guides/blob/master/TobitSQLBasicsAndStyleGuide.md)
 
